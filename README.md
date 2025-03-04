@@ -22,6 +22,118 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## Datos para Backend
+http://localhost:3000/alerta-stock
+
+
+http://localhost:3000/categoria
+
+[
+  {
+    "id_categoria": 13,
+    "nombre": "PruebaCategoria",
+    "descripcion": "Categoria Provisionada"
+  }
+]
+
+
+http://localhost:3000/empresa
+
+{
+  "nombre": "Empresa_Prueba",
+  "ruc": "1234567890",
+  "direccion": "Av. prueba",
+  "telefono": "987654321",
+  "email_contacto": "prueba@tech.com",
+  "sector": "Prueba",
+  "estado": "Activo"
+}
+
+
+http://localhost:3000/inventario
+
+{
+    "id_empresa": 1
+}
+
+
+http://localhost:3000/producto
+
+{
+  "codigo_barras": "12345678923",
+  "nombre": "Laptop Gamer",
+  "descripcion": "Laptop de alto rendimiento para gaming",
+  "precio_compra": 800,
+  "precio_venta": 1200,
+  "stock_minimo": 5,
+  "stock_maximo": 50
+}
+
+http://localhost:3000/movimiento-inventario
+
+{
+  "tipo_movimiento": "Entrada",
+  "cantidad": 50,
+  "motivo": "Compra de stock",
+  "costo_unitario": 15,
+  "ubicacion": "Almacén Central"
+}
+
+http://localhost:3000/pedido
+
+
+{
+    "id_empresa": 1,
+    "fecha_solicitud": "2025-02-25",
+    "fecha_entrega": "2025-02-25",
+    "estado": "Available"
+  }
+
+http://localhost:3000/detalle-pedido
+
+{
+  "cantidad": 5,
+  "precio_unitario": 15.0
+}
+
+http://localhost:3000/proveedor
+
+{
+    "nombre": "Proveedor A",
+    "contacto": "Juan Pérez",
+    "telefono": "987654321",
+    "email": "juan@proveedora.com",
+    "direccion": "Calle Falsa 456"
+  }
+
+http://localhost:3000/reporte
+
+{
+  "tipo": "Inventario",
+  "archivo_pdf": "reporte_inventario_2025_03_04.pdf"
+}
+
+
+http://localhost:3000/rol
+
+{
+  "nombre": "Admin",
+  "descripcion": "Rol para administrar"
+}
+
+http://localhost:3000/usuario
+
+{
+    "nombre_completo": "Jose Delgado",
+    "email": "jdelgado@example.com",
+    "telefono": "123456789",
+    "estado": "activo",
+    "password_hash": "123"
+  }
+
+
+
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
